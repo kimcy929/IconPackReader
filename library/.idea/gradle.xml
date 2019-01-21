@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/.." />
+            <option value="$PROJECT_DIR$/../AndroidBottomSheetFragment" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../MaterialCameraSample" />
+            <option value="$PROJECT_DIR$/../accessibilityservicedemmo" />
+            <option value="$PROJECT_DIR$/../bootsheetdemo" />
+            <option value="$PROJECT_DIR$/../customnotification" />
+            <option value="$PROJECT_DIR$/../digitaltextclock" />
+            <option value="$PROJECT_DIR$/../ffmpegexample" />
+            <option value="$PROJECT_DIR$/../getscreentimeout" />
+            <option value="$PROJECT_DIR$/../navigationviewtest" />
+            <option value="$PROJECT_DIR$/../resizeview" />
+            <option value="$PROJECT_DIR$/../rxjavalearning" />
+            <option value="$PROJECT_DIR$/../shadowlayout" />
+            <option value="$PROJECT_DIR$/../sidebarinservice" />
+            <option value="$PROJECT_DIR$/../testcountdowntimer" />
+            <option value="$PROJECT_DIR$/../testtouch" />
+            <option value="$PROJECT_DIR$/../volleyexample" />
+            <option value="$PROJECT_DIR$/../writesdcard" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

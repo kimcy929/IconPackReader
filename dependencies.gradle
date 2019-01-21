@@ -1,0 +1,17 @@
+ext.buildConfig = [
+        'compileSdk' : 28,
+        'minSdk'     : 21,
+        'targetSdk'  : 28,
+        'buildTools' :'28.0.3',
+]
+
+ext.versions = [
+        'androidx'               : '1.0.0',
+        'appcompat'              : "1.1.0-alpha01",
+        'recyclerview'           : "1.1.0-alpha01",
+        'timber'                 : '4.7.1',
+        'rxandroid'              : '2.1.0',
+        'rxjava'                 : '2.2.5',
+        'gradle'                 : '3.4.0-beta01',
+        'java'                   : JavaVersion.VERSION_1_8
+]

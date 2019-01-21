@@ -1,0 +1,7 @@
+<resources>
+    <string name="icon_pack_name_activity_title">List icon pack</string>
+    <string name="ok">@android:string/ok</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="night_mode">Night mode</string>
+    <string name="search">Search</string>
+</resources>

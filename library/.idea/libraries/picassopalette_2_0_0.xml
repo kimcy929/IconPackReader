@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="picassopalette-2.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/23f18e1bfeac46e6880f73dda5a91f78ed8e22d3/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/23f18e1bfeac46e6880f73dda5a91f78ed8e22d3/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/picassopalette/2.0.0/1401f5e775e9cc0b692cb83871ea3353ee672953/picassopalette-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

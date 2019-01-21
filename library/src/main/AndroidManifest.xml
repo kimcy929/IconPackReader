@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kimcy929.iconpakagereader">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.kimcy929.iconpakagereader.activity.IconPackNameActivity"
+            android:theme="@style/BaseIconPackReaderTheme.IconPackTheme"
+            android:noHistory="true"/>
+
+        <activity
+            android:name="com.kimcy929.iconpakagereader.activity.IconListActivity"
+            android:label="@string/icon_pack_name_activity_title"
+            android:theme="@style/BaseIconPackReaderTheme" />
+    </application>
+
+</manifest>

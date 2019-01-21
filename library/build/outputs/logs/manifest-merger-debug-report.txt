@@ -1,0 +1,59 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+	package
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:1-19:12
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:5:5-17:19
+	android:supportsRtl
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:7:9-35
+	android:allowBackup
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:6:9-35
+activity#com.kimcy929.iconpakagereader.activity.IconPackNameActivity
+ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:8:9-11:39
+	android:noHistory
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:11:13-37
+	android:theme
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:10:13-73
+	android:name
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:9:13-87
+activity#com.kimcy929.iconpakagereader.activity.IconListActivity
+ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:13:9-16:62
+	android:label
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:15:13-66
+	android:theme
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:16:13-59
+	android:name
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml:14:13-83
+uses-sdk
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		ADDED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml
+		INJECTED from E:\AndroidApps\IconPackReader\library\src\main\AndroidManifest.xml

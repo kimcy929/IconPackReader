@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#D54235</color>
+    <color name="colorPrimary">#222228</color>
+    <color name="colorPrimaryDark">#1A1A20</color>
+    <color name="colorWindowBackground">@android:color/white</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="dismiss">DISMISS</string>
+    <string name="icon_pack_name_activity_title">List icon pack</string>
+    <string name="night_mode">Night mode</string>
+    <string name="ok">@android:string/ok</string>
+    <string name="search">Search</string>
+    <style name="AlertDialogIconPackReaderStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/colorWindowBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BaseIconPackReaderTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="BaseIconPackReaderTheme.IconPackTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+    </style>
+</resources>

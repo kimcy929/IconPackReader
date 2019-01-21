@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AndroidBottomSheetFragment/AndroidBottomSheetFragment.iml" filepath="$PROJECT_DIR$/../AndroidBottomSheetFragment/AndroidBottomSheetFragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IconpakageReader.iml" filepath="$PROJECT_DIR$/IconpakageReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MaterialCameraSample/MaterialCameraSample.iml" filepath="$PROJECT_DIR$/../MaterialCameraSample/MaterialCameraSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TestModule.iml" filepath="$PROJECT_DIR$/../TestModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../accessibilityservicedemmo/accessibilityservicedemmo.iml" filepath="$PROJECT_DIR$/../accessibilityservicedemmo/accessibilityservicedemmo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bootsheetdemo/bootsheetdemo.iml" filepath="$PROJECT_DIR$/../bootsheetdemo/bootsheetdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../customnotification/customnotification.iml" filepath="$PROJECT_DIR$/../customnotification/customnotification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../digitaltextclock/digitaltextclock.iml" filepath="$PROJECT_DIR$/../digitaltextclock/digitaltextclock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ffmpegexample/ffmpegexample.iml" filepath="$PROJECT_DIR$/../ffmpegexample/ffmpegexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../getscreentimeout/getscreentimeout.iml" filepath="$PROJECT_DIR$/../getscreentimeout/getscreentimeout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../navigationviewtest/navigationviewtest.iml" filepath="$PROJECT_DIR$/../navigationviewtest/navigationviewtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../resizeview/resizeview.iml" filepath="$PROJECT_DIR$/../resizeview/resizeview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rxjavalearning/rxjavalearning.iml" filepath="$PROJECT_DIR$/../rxjavalearning/rxjavalearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shadowlayout/shadowlayout.iml" filepath="$PROJECT_DIR$/../shadowlayout/shadowlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sidebarinservice/sidebarinservice.iml" filepath="$PROJECT_DIR$/../sidebarinservice/sidebarinservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../testcountdowntimer/testcountdowntimer.iml" filepath="$PROJECT_DIR$/../testcountdowntimer/testcountdowntimer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../testtouch/testtouch.iml" filepath="$PROJECT_DIR$/../testtouch/testtouch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../volleyexample/volleyexample.iml" filepath="$PROJECT_DIR$/../volleyexample/volleyexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../writesdcard/writesdcard.iml" filepath="$PROJECT_DIR$/../writesdcard/writesdcard.iml" />
+    </modules>
+  </component>
+</project>
