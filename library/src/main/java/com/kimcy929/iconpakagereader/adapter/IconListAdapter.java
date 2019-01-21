@@ -124,7 +124,8 @@ public class IconListAdapter extends RecyclerView.Adapter<IconListAdapter.ViewHo
             if (TextUtils.isEmpty(query)) {
                 newIcons = originIcons;
             } else {
-                Pattern p = Pattern.compile(query, Pattern.CASE_INSENSITIVE|Pattern.UNICODE_CASE);
+                String targetQuery = query.replace(" ", "_");
+                Pattern p = Pattern.compile(targetQuery, Pattern.CASE_INSENSITIVE|Pattern.UNICODE_CASE);
                 for (String icon : originIcons) {
                     Matcher m = p.matcher(icon);
                     if (m.find()) {
