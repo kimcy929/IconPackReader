@@ -38,6 +38,7 @@ import java.util.concurrent.TimeUnit;
 import io.reactivex.Single;
 import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import timber.log.Timber;
@@ -51,8 +52,7 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
 
     private IconListAdapter adapter;
 
-    private Disposable searchDisposable;
-    private Disposable loadIconDisposable;
+   private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
     private IconPackHelper iconPackHelper = new IconPackHelper();
 
@@ -87,13 +87,13 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
 
             @Override
             public void onSubscribe(Disposable d) {
-                loadIconDisposable = d;
+                compositeDisposable.add(d);
             }
 
             @Override
             public void onSuccess(List<String> icons) {
                 if (!icons.isEmpty()) {
-                    adapter.addData(icons, iconPackHelper);
+                    adapter.addData(icons, iconPackHelper, compositeDisposable);
                 }
                 progressBar.setVisibility(View.GONE);
             }
@@ -178,7 +178,7 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
         getMenuInflater().inflate(R.menu.main_menu, menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
 
-        searchDisposable = RxSearch.stringQuery(searchView)
+        Disposable disposable = RxSearch.stringQuery(searchView)
             .debounce(100, TimeUnit.MILLISECONDS)
             .switchMap(query -> adapter.filter(query))
             .observeOn(AndroidSchedulers.mainThread())
@@ -186,7 +186,7 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
                     diffResult -> diffResult.dispatchUpdatesTo(adapter),
                     error -> Timber.e(error, "Error search icon -> ")
             );
-
+        compositeDisposable.add(disposable);
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -218,12 +218,7 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
 
     @Override
     protected void onDestroy() {
-        if (searchDisposable != null) {
-            searchDisposable.dispose();
-        }
-        if (loadIconDisposable != null) {
-            loadIconDisposable.dispose();
-        }
+        compositeDisposable.dispose();
         super.onDestroy();
     }
 }

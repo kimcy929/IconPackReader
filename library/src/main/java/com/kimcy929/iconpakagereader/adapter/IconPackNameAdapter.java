@@ -61,12 +61,7 @@ public class IconPackNameAdapter extends RecyclerView.Adapter<IconPackNameAdapte
         public ViewHolder(View itemView) {
             super(itemView);
             txtIconPackName = itemView.findViewById(R.id.txtIconPackName);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    clickListener.onClick(getAdapterPosition());
-                }
-            });
+            itemView.setOnClickListener(view -> clickListener.onClick(getAdapterPosition()));
         }
     }
 
