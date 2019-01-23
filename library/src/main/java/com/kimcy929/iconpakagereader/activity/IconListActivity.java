@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,6 +47,7 @@ import timber.log.Timber;
 public class IconListActivity extends AppCompatActivity implements IconListAdapter.ItemViewClickListener {
 
     private ProgressBar progressBar;
+    private RecyclerView recyclerView;
 
     private String iconPackPackageName;
     private String iconPackName;
@@ -70,10 +72,10 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
 
         configView();
 
-        loadIcons();
+        loadIcons(savedInstanceState);
     }
 
-    private void loadIcons() {
+    private void loadIcons(Bundle savedInstanceState) {
         Single.fromCallable(() -> {
             List<String> packagesDrawables = new ArrayList<>();
             iconPackHelper.packageName = iconPackPackageName;
@@ -96,6 +98,11 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
                     adapter.addData(icons, iconPackHelper, compositeDisposable);
                 }
                 progressBar.setVisibility(View.GONE);
+
+                RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
+                if (savedInstanceState != null && layoutManager != null) {
+                    layoutManager.onRestoreInstanceState(savedInstanceState.getParcelable(Constant.EXTRA_SCROLL_POSITION));
+                }
             }
 
             @Override
@@ -107,8 +114,7 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
     }
 
     private void configView() {
-
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
 
         progressBar = findViewById(R.id.progressBar);
 
@@ -171,6 +177,15 @@ public class IconListActivity extends AppCompatActivity implements IconListAdapt
     private boolean isNightModeEnable() {
         return PreferenceManager.getDefaultSharedPreferences(getApplicationContext())
                 .getBoolean("icon_pack_night_mode", false);
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
+        if (layoutManager != null) {
+            outState.putParcelable(Constant.EXTRA_SCROLL_POSITION, layoutManager.onSaveInstanceState());
+        }
+        super.onSaveInstanceState(outState);
     }
 
     @Override
