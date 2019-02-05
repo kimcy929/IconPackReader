@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion buildConfig.compileSdk
@@ -26,8 +28,12 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
+
     implementation "androidx.appcompat:appcompat:${versions.appcompat}"
     implementation "androidx.recyclerview:recyclerview:${versions.recyclerview}"
+    implementation "com.google.android.material:material:${versions.material}"
 
     implementation "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}"
     implementation "io.reactivex.rxjava2:rxjava:${versions.rxjava}"
