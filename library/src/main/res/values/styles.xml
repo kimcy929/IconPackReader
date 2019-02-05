@@ -1,22 +1,28 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="BaseIconPackReaderTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <style name="BaseIconPackReaderTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="BaseIconPackReaderTheme.IconPackTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="ListIconPackTheme" parent="BaseIconPackReaderTheme">
         <item name="android:windowBackground">@color/colorWindowBackground</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="submitBackground">@color/colorPrimary</item>
+        <item name="queryBackground">@color/colorPrimary</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="searchIcon">@drawable/ic_search_black_24dp</item>
     </style>
 
     <!--Dialog style-->
-    <style name="AlertDialogIconPackReaderStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
-        <item name="android:background">@color/colorWindowBackground</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AlertDialogIconPackReaderStyle" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="colorSurface">@color/colorDialogBackground</item>
+        <item name="colorPrimary">@color/colorAccent</item>
     </style>
 
 </resources>

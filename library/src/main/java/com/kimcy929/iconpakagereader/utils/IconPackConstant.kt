@@ -1,0 +1,13 @@
+package com.kimcy929.iconpakagereader.utils
+
+/**
+ * Created by kimcy929 on 3/12/2017.
+ */
+
+object IconPackConstant {
+    const val ICON_PACK_NAME_EXTRA = "ICON_PACK_NAME_EXTRA"
+    const val ICON_PACK_PACKAGENAME_EXTRA = "ICON_PACK_PACKAGENAME_EXTRA"
+    const val ICON_PACK_BITMAP_ICON_EXTRA = "ICON_PACK_BITMAP_ICON_EXTRA"
+    const val ICON_PACK_ICON_NAME_EXTRA = "ICON_PACK_ICON_NAME_EXTRA"
+    const val ICON_PACK_EXTRA_SCROLL_POSITION = "ICON_PACK_EXTRA_SCROLL_POSITION"
+}
